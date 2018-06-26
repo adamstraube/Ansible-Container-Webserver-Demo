@@ -1,0 +1,17 @@
+version: "2"
+settings:
+  conductor:
+    base: "debian:jessie"
+  project_name: "apache-php"
+
+services:
+  webserver:
+    from: "debian:jessie"
+    roles:
+      - role: "webserver"
+    ports:
+      - "85:80"
+    volumes: 
+      - ${PWD}/html:/var/www/html:rw,delegated 
+    command: ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+
