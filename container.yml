@@ -10,7 +10,7 @@ services:
     roles:
       - role: "webserver"
     ports:
-      - "85:80"
+      - "80:80"
     volumes: 
       - ${PWD}/html:/var/www/html:rw,delegated 
     command: ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
