@@ -10,7 +10,7 @@ Check the blog post above
 
 Use Ansible Galaxy to download the project, then build and run:
 ```bash
-ansible-container init adamstraube.Ansible-Container-Webserver-Demo
+ansible-container init adamstraube.ansible-container-webserver-demo
 ansible-container build
 ansible-container run
 ```
