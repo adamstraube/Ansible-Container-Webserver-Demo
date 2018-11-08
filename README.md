@@ -9,6 +9,7 @@ Check the blog post above
 ## Build & Run
 
 Use Ansible Galaxy to download the project, then build and run:
+
 (note: Namespace id required currently in init command. Will change back when https://github.com/ansible/ansible-container-demo/issues/7 is fixed)
 ```bash
 ansible-container init 1327.Ansible-Container-Webserver-Demo
